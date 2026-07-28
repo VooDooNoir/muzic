@@ -1,4 +1,4 @@
-# MuseCoco Service - Render Deployment (Dockerfile at musecoco/ root)
+# MuseCoco Service - Render Deployment (Dockerfile at repo root)
 services:
   - type: web
     name: musecoco-t2a

@@ -1,5 +1,5 @@
 # MuseCoco Stage-1 (Text-to-Attribute) — Render-compatible CPU build
-# Build: docker build -t musecoco-t2a musecoco/
+# Build: docker build -f Dockerfile -t musecoco-t2a musecoco/
 
 FROM python:3.10-slim
 
