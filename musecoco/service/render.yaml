@@ -1,4 +1,4 @@
-# MuseCoco Service - Render Deployment (Corrected Context)
+# MuseCoco Service - Render Deployment (Dockerfile at musecoco/ root)
 services:
   - type: web
     name: musecoco-t2a
@@ -6,7 +6,6 @@ services:
     region: oregon
     plan: free
     healthCheckPath: /health
-    dockerFilePath: service/Dockerfile
     dockerContext: musecoco/
     envVars:
       - key: PORT
