@@ -1,4 +1,4 @@
-# MuseCoco Service - Render Deployment (Fixed Path)
+# MuseCoco Service - Render Deployment (Corrected Context)
 services:
   - type: web
     name: musecoco-t2a
@@ -6,10 +6,10 @@ services:
     region: oregon
     plan: free
     healthCheckPath: /health
-    dockerFilePath: musecoco/service/Dockerfile
-    dockerContext: .
+    dockerFilePath: service/Dockerfile
+    dockerContext: musecoco/
     envVars:
       - key: PORT
-        value: 8080
+        value: 8090
       - key: T2A_MODEL
         value: XinXuNLPer/MuseCoco_text2attribute
