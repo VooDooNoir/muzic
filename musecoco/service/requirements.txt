@@ -1,0 +1,12 @@
+# MuseCoco Service — Stage 1 (Text-to-Attribute)
+# Stage 2 (fairseq, music21, etc.) is stubbed and not required.
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+torch>=2.0.0
+transformers>=4.26.0
+accelerate>=0.20.0
+sentencepiece!=0.1.92
+protobuf>=3.20.0
+scikit-learn>=1.0.0

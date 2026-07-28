@@ -1,0 +1,6 @@
+---
+sdk: docker
+app_port: 8090
+models:
+  - XinXuNLPer/MuseCoco_text2attribute
+  - XinXuNLPer/MuseCoco_attribute2music
