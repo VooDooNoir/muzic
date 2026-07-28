@@ -1,7 +1,4 @@
-# MuseCoco Stage-1 (Text-to-Attribute) — Render Blueprint
-# Deploy via: https://dashboard.render.com/blueprints
-# After deploy, set MUSECOGO_API_SECRET as a secret env var in the Render dashboard.
-
+# MuseCoco Service - Render Deployment (Fixed Path)
 services:
   - type: web
     name: musecoco-t2a
@@ -9,9 +6,10 @@ services:
     region: oregon
     plan: free
     healthCheckPath: /health
-    dockerfilePath: ./service/Dockerfile
+    dockerFilePath: musecoco/service/Dockerfile
+    dockerContext: .
     envVars:
+      - key: PORT
+        value: 8080
       - key: T2A_MODEL
         value: XinXuNLPer/MuseCoco_text2attribute
-      - key: MUSECOGO_API_SECRET
-        sync: false
